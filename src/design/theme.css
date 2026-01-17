@@ -1,0 +1,59 @@
+:root {
+  --snoonu-red: #e30613;
+
+  /* Mostly white, subtle warm tint */
+  --app-gradient: radial-gradient(
+      1100px 700px at 92% 0%,
+      rgba(227, 6, 19, 0.06) 0%,
+      rgba(255, 255, 255, 0.98) 58%,
+      #ffffff 100%
+  );
+
+  --text: #0b1220;
+  --muted: rgba(60, 60, 67, 0.6);      /* iOS secondary label vibe */
+  --border: rgba(60, 60, 67, 0.16);    /* iOS separator vibe */
+
+  /* iOS materials */
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+
+  /* Radii */
+  --radius-card: 22px;
+  --radius-pill: 9999px;
+
+  /* Shadows: iOS soft depth */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-float: 0 18px 60px rgba(0, 0, 0, 0.14);
+
+  --success: #34c759; /* iOS green */
+  --warning: #ff9f0a; /* iOS orange */
+
+  /* Snoonu accent gradient (used sparingly) */
+  --accent-gradient: linear-gradient(
+    135deg,
+    rgba(227, 6, 19, 0.95),
+    rgba(255, 59, 48, 0.78)
+  );
+}
+
+/* iOS glass material */
+.glass {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Strong surface (for modals) */
+.surface-strong {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-float);
+}
+
+/* iOS separators */
+.separator {
+  height: 1px;
+  background: var(--border);
+}
